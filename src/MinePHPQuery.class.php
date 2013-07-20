@@ -68,7 +68,6 @@ class MinePHPQuery {
 	 * @param string $ip      IP of the MC server
 	 * @param int    $port    Port of the MC server
 	 * @param int    $timeout Timeout
-	 * @throws MinecraftQueryException
 	 * @throws InvalidArgumentException
 	 */
 	public function __construct($ip, $port = 25565, $timeout = 5) {
