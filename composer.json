@@ -3,7 +3,6 @@
 	"type": "library",
 	"description": "Simple to use library to fetch and check the status of Minecraft servers.",
 	"license": "GPL-3.0",
-	"version": "1.0",
 	"authors": [
 		{
 			"name": "Janek Ostendorf (ozzy)",
