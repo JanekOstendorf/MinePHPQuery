@@ -1,0 +1,24 @@
+{
+	"name": "ozzyfant/minephpquery",
+	"type": "library",
+	"description": "Simple to use library to fetch and check the status of Minecraft servers.",
+	"license": "GPL-3.0",
+	"authors": [
+		{
+			"name": "Janek Ostendorf (ozzy)",
+			"email": "ozzyfant@gmail.com"
+		}
+	],
+	"support": {
+		"irc": "irc://irc.skyirc.net/minecraft-dev",
+		"issues": "https://github.com/ozzyfant/MinePHPQuery/issues"
+	},
+	"require": {
+		"php": ">=5.4.0"
+	},
+	"autoload": {
+		"classmap": [
+			"src/MinePHPQuery.class.php"
+		]
+	}
+}
