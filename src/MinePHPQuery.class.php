@@ -63,6 +63,11 @@ class MinePHPQuery {
 	 * @var float
 	 */
 	protected $duration = 0;
+	
+	/**
+	 * @var string
+	 */
+	protected $version = '';
 
 	/**
 	 * @param string $ip      IP of the MC server
@@ -151,6 +156,7 @@ class MinePHPQuery {
 		}
 
 		/* Parse the values */
+		$this->version     = $info['version'];
 		// Integers
 		$this->playerCount = intval($info['player_count']);
 		$this->maxPlayers  = intval($info['max_players']);
@@ -291,5 +297,12 @@ class MinePHPQuery {
 	 */
 	public function getDuration() {
 		return $this->duration;
+	}
+	
+	/**
+	 * @return string
+	 */
+	public function getVersion() {
+		return $this->version;
 	}
 }
