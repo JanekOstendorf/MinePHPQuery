@@ -36,7 +36,7 @@ $options = getopt($optString, $longOpt);
 
 if(isset($options['h']) || isset($options['help'])) {
 	printHelp();
-	return 3;
+	exit(3);
 } else if((isset($options['H']) || isset($options['host']))) {
 	$config['host'] = isset($options['host']) ? $options['host'] : $options['H'];
 
@@ -46,11 +46,11 @@ if(isset($options['h']) || isset($options['help'])) {
 	if(isset($options['w']) || isset($options['warn']))
 		$config['warn'] = isset($options['warn']) ? $options['warn'] : $options['w'];
 
-	return checkServer($config);
+	exit(checkServer($config));
 
 } else {
 	printSummary();
-	return 3;
+	exit(3);
 }
 
 function checkServer($config) {
